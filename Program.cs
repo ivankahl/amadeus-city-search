@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Register the AmadeusOptions class
 builder.Services.Configure<AmadeusOptions>(builder.Configuration.GetSection(AmadeusOptions.Amadeus));  
 
+// Register the AmadeusClient class
+builder.Services.AddSingleton<AmadeusClient>();
+
 // Register all the HttpClient-related services
 builder.Services.AddHttpClient();
 
@@ -45,7 +48,7 @@ app.MapGet("/search", async ([AsParameters] SearchRequestDto request, [FromServi
     {
         // Make a response to the Amadeus API using the client
         var response = await amadeusClient.SearchCitiesAsync(request.Query, cancellationToken: cancellationToken);
-        return Results.Ok(response);
+        return Results.Ok(response.Data);
     }
     catch (AmadeusApiException e)
     {
