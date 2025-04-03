@@ -96,8 +96,7 @@ Once the application is running, navigate to `/swagger` in your browser:
 Search for cities with a keyword:
 
 ```bash
-# Basic search
-curl -X GET "http://localhost:5202/search?query=new%20york" -H "accept: application/json"
+curl -X GET "http://localhost:5202/search?query=new%20york"
 ```
 
 ### Response Example
