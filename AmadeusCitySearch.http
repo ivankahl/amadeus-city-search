@@ -1,0 +1,6 @@
+@AmadeusCitySearch_HostAddress = http://localhost:5202
+
+GET {{AmadeusCitySearch_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
