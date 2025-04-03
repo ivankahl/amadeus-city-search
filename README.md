@@ -59,7 +59,6 @@ dotnet run
 
 The API will be available at:
 - HTTP: http://localhost:5202
-- HTTPS: https://localhost:7042
 
 ### Using Docker with Environment Variables
 
