@@ -88,7 +88,7 @@ The API will be available at http://localhost:8080.
 ### Using Swagger UI
 
 Once the application is running, navigate to `/swagger` in your browser:
-- Local .NET: https://localhost:7042/swagger
+- Local .NET: http://localhost:5202/swagger
 - Docker: http://localhost:8080/swagger
 
 ### Using curl
