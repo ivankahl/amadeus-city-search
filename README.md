@@ -79,7 +79,7 @@ docker run -p 8080:8080 \
   amadeus-city-search
 ```
 
-Note: .NET uses double underscores (`__`) instead of colons (`:`) for configuration hierarchy. Include `ASPNETCORE_ENVIRONMENT=Development` to access Swagger.
+Note: .NET uses double underscores (`__`) instead of colons (`:`) for configuration hierarchy when using environment variables. Include `ASPNETCORE_ENVIRONMENT=Development` to access Swagger.
 
 The API will be available at http://localhost:8080.
 
