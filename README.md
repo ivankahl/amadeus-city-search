@@ -72,8 +72,8 @@ docker build -t amadeus-city-search .
 
 ```bash
 docker run -p 8080:8080 \
-  -e "Amadeus__ApiKey=your-api-key" \
-  -e "Amadeus__ApiSecret=your-api-secret" \
+  -e "Amadeus__ApiKey=<API_KEY>" \
+  -e "Amadeus__ApiSecret=<API_SECRET>" \
   -e "ASPNETCORE_ENVIRONMENT=Development" \
   --name amadeus-city-search \
   amadeus-city-search
