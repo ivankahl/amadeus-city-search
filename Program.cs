@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<AmadeusOptions>(builder.Configuration.GetSection(AmadeusOptions.Amadeus));  
 
 // Register the AmadeusClient class
-builder.Services.AddSingleton<AmadeusClient>();
+builder.Services.AddScoped<AmadeusClient>();
 
 // Register all the HttpClient-related services
 builder.Services.AddHttpClient();
